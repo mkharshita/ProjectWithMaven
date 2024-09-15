@@ -20,4 +20,9 @@
 
     <!--    Or      -->
     <bean class="org.constructorInjection.Person" name="person2" c:id="102" c:name="Shruti" c:certificate-ref="certificate1" />
+
+    <bean class="org.constructorInjection.Addition" name="addition1" >
+        <constructor-arg value="12" type="int" index="1"/>
+        <constructor-arg value="13" type="int" index="0"/>
+    </bean>
 </beans>
