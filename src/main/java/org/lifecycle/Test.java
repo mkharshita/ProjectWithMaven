@@ -21,5 +21,9 @@ public class Test {
 
         System.out.println("------------------------");
 
+        Example example1 = (Example) applicationContext.getBean("example1");
+        System.out.println(example1);
+
+        System.out.println("------------------------");
     }
 }

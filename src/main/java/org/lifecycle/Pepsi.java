@@ -26,11 +26,11 @@ public class Pepsi implements InitializingBean, DisposableBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("Init Method");
+        System.out.println("Pepsi : init");
     }
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("Destory Method");
+        System.out.println("Pepsi : destroy");
     }
 }

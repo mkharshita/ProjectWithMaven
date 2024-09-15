@@ -28,10 +28,10 @@ public class Samosa {
     }
 
     public void hey(){
-        System.out.println("Inside init method");
+        System.out.println("Samosa : init");
     }
 
     public void bye(){
-        System.out.println("Inside destory method");
+        System.out.println("Samosa : destroy");
     }
 }
