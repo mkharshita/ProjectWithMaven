@@ -11,4 +11,8 @@
     <bean class="org.lifecycle.Samosa" name="samosa1" init-method="hey" destroy-method="bye">
         <property name="price" value="1002" />
     </bean>
+
+    <bean class="org.lifecycle.Pepsi" name="pepsi1">
+        <property name="price" value="222" />
+    </bean>
 </beans>
