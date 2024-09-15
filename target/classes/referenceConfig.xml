@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+
+    <bean class="org.reference.Child" name="child1">
+        <property name="childId" value="001" />
+    </bean>
+    <bean class="org.reference.Parent" name="parent1">
+        <property name="parentId" value="001" />
+        <property name="child">
+            <ref bean="child1" />
+        </property>
+    </bean>
+    <!--    Or -->
+    <bean class="org.reference.Parent" name="parent2">
+        <property name="parentId" value="002" />
+        <property name="child" ref="child1" />
+    </bean>
+    <!--    Or  -->
+    <bean class="org.reference.Parent" name="parent3" p:parentId="003" p:child-ref="child1" />
+</beans>
