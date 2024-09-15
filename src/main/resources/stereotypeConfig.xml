@@ -12,4 +12,11 @@
   https://www.springframework.org/schema/util/spring-util.xsd"
 >
     <context:component-scan base-package="org.stereotype" />
+
+    <util:list list-class="java.util.ArrayList" id="mybestfriends">
+        <value>Shagun</value>
+        <value>Bhawna</value>
+        <value>Aanchal</value>
+    </util:list>
+
 </beans>
