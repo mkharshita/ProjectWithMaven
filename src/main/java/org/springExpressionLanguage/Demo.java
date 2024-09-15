@@ -19,6 +19,9 @@ public class Demo {
     @Value("#{new java.lang.String('Harshita Saxena')}")
     private String name;
 
+    @Value("#{8-4>3}")
+    private boolean isActive;
+
     public int getX() {
         return x;
     }
@@ -59,6 +62,14 @@ public class Demo {
         this.name = name;
     }
 
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
     @Override
     public String toString() {
         return "Demo{" +
@@ -67,6 +78,7 @@ public class Demo {
                 ", z=" + z +
                 ", e=" + e +
                 ", name='" + name + '\'' +
+                ", isActive=" + isActive +
                 '}';
     }
 
