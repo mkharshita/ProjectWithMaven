@@ -1,0 +1,2 @@
+# ProjectWithMaven
+Spring Core
