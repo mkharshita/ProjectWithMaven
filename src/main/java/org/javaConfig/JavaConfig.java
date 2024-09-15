@@ -13,8 +13,15 @@ public class JavaConfig {
     public Samosa getSamosa() {
         return new Samosa();
     }
+
     @Bean
     public Student getStudent() {
+        Student student = new Student(getSamosa());
+        return student;
+    }
+
+    @Bean( name = {"student1", "student2", "student3"})
+    public Student myStudent() {
         Student student = new Student(getSamosa());
         return student;
     }

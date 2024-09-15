@@ -11,5 +11,8 @@ public class Test {
         System.out.println(student);
         student.study();
         student.getSamosa().display();
+
+        Student student1 = applicationContext.getBean("student1",Student.class);
+        student1.study();
     }
 }
