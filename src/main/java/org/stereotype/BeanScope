@@ -1,0 +1,12 @@
+Bean Scope
+1. Singleton
+2. Prototype
+3. http
+4. session
+5. globalsession
+
+<bean class="" name="" scope="" />
+
+@Component
+@Scope("")
+class Student{}
